@@ -3,10 +3,10 @@ layout: default
 ---
 
 <ul>
-{% for city in site.data.cities %}
+{% for option in site.data.options %}
   <li>
-    <a href="{{ city.url }}">
-      {{ city.name }}
+    <a href="{{ option.url }}">
+      {{ option.name }}
     </a>
   </li>
 {% endfor %}
