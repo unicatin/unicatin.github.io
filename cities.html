@@ -34,15 +34,15 @@ layout: default
                             Introduce about <br>
                             myself</h2>
                         
-<ul>
-{% for option in site.data.options %}
+
+
   <li>
-    <a href="{{ option.url }}">
-      {{ option.name }}
+    <a href="">
+      
     </a>
   </li>
-{% endfor %}
-</ul>
+
+
                         <a class="primary_btn" href="#"><span>Download CV</span></a>
                     </div>
                 </div>
@@ -50,6 +50,30 @@ layout: default
         </div>
     </section>
     <!--================ End About Us Area =================-->
+
+
+<section class="blog_categorie_area section_gap_top">
+        <div class="container">
+            <div class="row">
+			<ul style="list-style-type:none;">
+			{% for option in site.data.options %}
+                <div class="col-lg-4">
+                    <div class="categories_post">
+                        <img src="https://unicatin.github.io/assets/img/blog/cat-post/cat-post-3.jpg" alt="post">
+                        <div class="categories_details">
+                            <div class="categories_text">
+                                <a href="{{ option.url }}"><h5>{{ option.name }}</h5></a>
+                                <div class="border_line"></div>
+                                <p>Enjoy your social life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			{% endfor %}
+			</ul>\
+            </div>
+        </div>
+    </section>
 
 
     <!--================ Start Newsletter Area =================-->
